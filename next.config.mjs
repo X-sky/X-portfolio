@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/X-repress",
+  basePath: "/X-resume",
   reactStrictMode: true,
   trailingSlash: false,
   compiler: {
