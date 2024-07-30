@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/X-resume",
+  basePath: "/X-portfolio",
   reactStrictMode: true,
   trailingSlash: false,
   compiler: {
