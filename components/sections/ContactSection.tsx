@@ -2,9 +2,11 @@
 
 import { useEffect, useRef } from "react"
 import useScrollActive from "@/hooks/useScrollActive"
+import wechatQrcode from "@/public/wechat_qrcode.jpg"
 import { useSectionStore } from "@/store/section"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
+import Image from "next/image"
 import Link from "next/link"
 
 export default function ContactSection() {
@@ -55,7 +57,7 @@ export default function ContactSection() {
       id="contact"
       className="max-h-max bg-gray-100 dark:bg-[#161D1F] py-[140px] px-10 lg:px-[5%]"
     >
-      <div className="w-full max-w-[1100px] h-full m-auto flex flex-col gap-40 items-center">
+      <div className="w-full max-w-[1100px] h-full m-auto flex flex-col items-center gap-5">
         <div className="flex flex-col items-center gap-2">
           <div className="overflow-hidden">
             <div className="title-animation dark:text-white text-lg">
@@ -67,11 +69,19 @@ export default function ContactSection() {
               Contact me!
             </div>
           </div>
+          <div className="w-32 h-32">
+            <Image
+              priority
+              alt="wechat qrcode"
+              title="scan to contact me with wechat"
+              src={wechatQrcode}
+            />
+          </div>
         </div>
 
         <div className="flex flex-col gap-8 items-center">
           <div className="flex items-center gap-4">
-            <Link
+            {/* <Link
               href="https://www.linkedin.com/in/shinn-thant-b90533231"
               target="_blank"
               rel="noopener noreferrer"
@@ -80,10 +90,10 @@ export default function ContactSection() {
             >
               <div className="font-semibold dark:text-white">in</div>
               <div className="text-xs dark:text-white">Linkedin</div>
-            </Link>
+            </Link> */}
 
             <Link
-              href="https://x.com/dev_shinnthant"
+              href="https://x.com/Tse0103x"
               aria-label="Contact me on Twitter"
               target="_blank"
               rel="noopener noreferrer"
@@ -108,7 +118,7 @@ export default function ContactSection() {
             </Link>
 
             <Link
-              href="https://github.com/ShinnTNT"
+              href="https://github.com/X-sky"
               aria-label="Contact me on Github"
               target="_blank"
               rel="noopener noreferrer"
@@ -133,11 +143,9 @@ export default function ContactSection() {
           </div>
           <div className="flex flex-col items-center">
             <div className="text-accentColor text-lg font-semibold">
-              Shin Thant
+              Xie Tian
             </div>
-            <div className="dark:text-white text-sm">
-              Designer, Developer & Lover
-            </div>
+            <div className="dark:text-white text-sm">Developer & Lover</div>
           </div>
           <div className="overflow-hidden flex justify-center items-center">
             <div className="title-animation w-full md:max-w-[80%] text-center dark:text-gray-400">
@@ -148,7 +156,7 @@ export default function ContactSection() {
             </div>
           </div>
           <div className="end-title dark:text-white text-md">
-            Made with ❤️ by Shin Thant
+            Let&apos;s make the world better together!
             <br />
             <br />
             <br />

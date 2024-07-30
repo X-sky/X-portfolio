@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react"
 import Code from "@/public/assets/hero/code.png"
-import HeroSpinner from "@/public/assets/hero/hero-spinner.webp"
 import Source from "@/public/assets/hero/source.png"
 import heroLottieData from "@/public/assets/lottie/hero-lottie.json"
 import { gsap } from "gsap"
@@ -34,13 +33,13 @@ export default function HeroTool() {
         <div className="absolute hidden xl:block select-none pointer-events-none left-[-10rem] bottom-[3rem] rotate-270">
           <Lottie animationData={heroLottieData} loop={true} />
         </div>
-        <Image
+        {/* <Image
           ref={firstSpinnerRef}
           className="w-full h-full object-cover select-none pointer-events-none"
           src={HeroSpinner}
           alt="hero-background"
-        />
-        <div className="w-14 h-14 md:w-20 md:h-20 select-none pointer-events-none absolute z-[1] bg-gradient-to-tl from-[#132726] to-[#13191B] shadow-md rounded-full flex justify-center items-center">
+        /> */}
+        <div className="w-14 h-14 md:w-20 md:h-20 select-none pointer-events-none absolute z-[1] bg-gradient-to-tl from-[#22375e] to-[#13191B] shadow-md rounded-full flex justify-center items-center">
           <Image className="w-4 md:w-6" src={Source} alt="hero-background" />
         </div>
       </div>
@@ -48,13 +47,13 @@ export default function HeroTool() {
 
       {/* Circle */}
       <div className="relative overflow-hidden xl:overflow-visible w-full h-[16rem] md:w-[27rem] md:h-[27rem] flex justify-center items-center">
-        <Image
+        {/* <Image
           ref={secondSpinnerRef}
           className="w-full h-full rotate-180 object-cover select-none pointer-events-none"
           src={HeroSpinner}
           alt="hero-background"
-        />
-        <div className="w-14 h-14 md:w-20 md:h-20 select-none pointer-events-none absolute z-[1] bg-gradient-to-tl from-[#132726] to-[#13191B] shadow-md rounded-full flex justify-center items-center">
+        /> */}
+        <div className="w-14 h-14 md:w-20 md:h-20 select-none pointer-events-none absolute z-[1] bg-gradient-to-tl from-[#22375e] to-[#13191B] shadow-md rounded-full flex justify-center items-center">
           <Image className="w-4 md:w-6" src={Code} alt="hero-background" />
         </div>
       </div>

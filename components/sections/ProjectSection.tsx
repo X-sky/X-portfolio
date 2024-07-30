@@ -3,12 +3,9 @@
 import { useEffect, useRef } from "react"
 import useOnScreen from "@/hooks/useOnScreen"
 import useScrollActive from "@/hooks/useScrollActive"
-import Ecommerce from "@/public/assets/projects/ecommerce.png"
-import GuessMyNumber from "@/public/assets/projects/guess-my-number.png"
-import MiroClone from "@/public/assets/projects/miro-clone.png"
-import Music from "@/public/assets/projects/music-app.png"
-import PortfolioV2 from "@/public/assets/projects/portfolio-v2.png"
-import VSCode from "@/public/assets/projects/vscode.png"
+import HostsWitchImage from "@/public/assets/projects/HostsWitch.png"
+import XPressImage from "@/public/assets/projects/X-press.png"
+import VueDemiImage from "@/public/assets/projects/vue-demi.png"
 import { useSectionStore } from "@/store/section"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
@@ -76,8 +73,9 @@ export default function ProjectSection() {
           </RoughNotation>
           <div ref={elementRef} className="overflow-hidden ">
             <div className="qoutes-animation  md:w-full text-center font-medium flex flex-col items-center">
-              <div>Good design is obvious. Great design is transparent.</div>
-              <div>Design is not for philosophy, it&apos;s for life.</div>
+              <div>
+                OpenSource is not about community, it&apos;s about attitude.
+              </div>
             </div>
           </div>
         </div>
@@ -94,7 +92,7 @@ export default function ProjectSection() {
             target="_blank"
             aria-label="Expore more in my github profile"
             rel="noopener noreferrer"
-            className="text-accentColor navlink dark:hover:text-black"
+            className="text-accentColor"
           >
             my github profile
           </Link>
@@ -117,62 +115,31 @@ export interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "VSCode Portfolio",
+    title: "HostsExtension",
     description:
-      "My portfolio website in vscode version developed with React and TypeScript.",
-    techStacks: ["ReactJS", "TypeScript"],
-    image: VSCode,
-    githubURL: "https://github.com/ShinnTNT/vscode-portfolio",
-    githubApi: "https://api.github.com/repos/ShinnTNT/vscode-portfolio",
+      "Enjoy the very fast and instant host-switching experience with ✨HostsWitch✨ !",
+    techStacks: ["React", "TypeScript", "MUI", "Jotai"],
+    image: HostsWitchImage,
+    githubURL: "https://github.com/X-sky/HostsWitch",
+    githubApi: "https://api.github.com/repos/X-sky/HostsWitch",
   },
   {
     id: 2,
-    title: "Exclusive Ecommerce",
-    description:
-      "A cutting-edge e-commerce web application designed to provide a seamless shopping experience.",
-    techStacks: ["NextJS", "Strapi", "Radix UI"],
-    image: Ecommerce,
-    githubURL: "https://github.com/ShinnTNT/exclusive-ecommerce",
-    githubApi: "https://api.github.com/repos/ShinnTNT/exclusive-ecommerce",
+    title: "Vue uni ui",
+    description: "A Universal component lib for Vue 2 & 3!",
+    techStacks: ["Vue", "typescript", "vite"],
+    image: VueDemiImage,
+    githubURL: "https://github.com/X-sky/vue-uni-component",
+    githubApi: "https://api.github.com/repos/X-sky/vue-uni-component",
   },
   {
     id: 3,
-    title: "Music Web App",
+    title: "X-press",
     description:
-      "An innovative music web application that brings your favorite tunes to your fingertips.",
-    techStacks: ["NextJS", "Strapi", "Radix UI"],
-    image: Music,
-    githubURL: "https://github.com/ShinnTNT/music-player",
-    githubApi: "https://api.github.com/repos/ShinnTNT/music-player",
-  },
-  {
-    id: 4,
-    title: "Guess My Number",
-    description:
-      "An engaging web app created with vanilla JavaScript where users can test their luck and intuition by guessing a randomly generated number.",
-    techStacks: ["Vanilla JavaScript", "CSS"],
-    image: GuessMyNumber,
-    githubURL: "https://github.com/ShinnTNT/Guess-My-Number",
-    githubApi: "https://api.github.com/repos/ShinnTNT/Guess-My-Number",
-  },
-  {
-    id: 5,
-    title: "Portfolio V2",
-    description:
-      "A refined and enhanced showcase of my work, designed to highlight my skills and projects with a sleek and modern interface.",
+      "A refined and enhanced showcase of my work, an entry to all of my technique precipitation",
     techStacks: ["NextJS", "ShadnUI", "GSAP"],
-    image: PortfolioV2,
+    image: XPressImage,
     githubURL: "https://github.com/ShinnTNT/shinthant.dev",
     githubApi: "https://api.github.com/repos/ShinnTNT/shinthant.dev",
-  },
-  {
-    id: 6,
-    title: "Miro Clone",
-    description:
-      "Enjoy a wide range of brushes, colors, and effects, along with layers, undo/redo functionality, and easy sharing options.",
-    techStacks: ["NextJS", "ShadnUI", "Convex", "Clerk", "Liveblocks"],
-    image: MiroClone,
-    githubURL: "https://github.com/ShinnTNT/realtime-miro-clone",
-    githubApi: "https://api.github.com/repos/ShinnTNT/realtime-miro-clone",
   },
 ]

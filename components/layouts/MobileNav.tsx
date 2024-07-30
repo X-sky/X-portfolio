@@ -1,5 +1,5 @@
 import { useState } from "react"
-import navlinks from "@/lib/navConfig"
+import navLinks from "@/lib/navConfig"
 import { HambergerMenu } from "iconsax-react"
 import { useRouter } from "next/navigation"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
@@ -24,7 +24,7 @@ export default function MobileNav() {
       </SheetTrigger>
       <SheetContent className="w-full h-full border-0">
         <div className="py-20 w-full flex flex-col absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 gap-10 items-center">
-          {navlinks.map((navLink) => (
+          {navLinks.map((navLink) => (
             <div
               // href={navLink.href}
               className="dark:text-white hover:dark:text-accentColor"

@@ -1,20 +1,20 @@
-const navlinks = [
-    {
-        title:"About",
-        href:"#about"
-    },
-    {
-        title:"Project",
-        href:"#project"
-    },
-    {
-        title:"Blog",
-        href:"#blog"
-    },
-    {
-        title:"Contact",
-        href:"#contact"
-    },
+const navLinks = [
+  {
+    title: "About",
+    href: "#about",
+  },
+  {
+    title: "Blog",
+    href: "#blog",
+  },
+  {
+    title: "Project",
+    href: "#project",
+  },
+  {
+    title: "Contact",
+    href: "#contact",
+  },
 ]
 
-export default navlinks
+export default navLinks

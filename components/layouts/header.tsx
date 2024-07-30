@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react"
-import navlinks from "@/lib/navConfig"
+import navLinks from "@/lib/navConfig"
 import { cn } from "@/lib/utils"
 import { useSectionStore } from "@/store/section"
 import gsap from "gsap"
@@ -32,20 +32,12 @@ export default function Header() {
         <div className="w-full grid items-center grid-cols-8 md:grid-cols-12">
           <div className="col-span-4">
             <Link href="/" className="text-xl">
-              <span
-                className={cn(
-                  "dark:text-white hover:text-accentColor cursor-pointer",
-                  section === "#project" && "dark:text-black"
-                )}
-              >
-                ShinThant
-              </span>
-              <span className="text-accentColor font-bold">.dev</span>
+              <span className="text-accentColor font-bold">X-Press</span>
             </Link>
           </div>
           <div className="col-span-4 hidden md:block m-auto">
             <div className="flex gap-[3rem] items-center">
-              {navlinks.map((link) => (
+              {navLinks.map((link) => (
                 <Link
                   data-active={link.href === section}
                   key={link.title}
